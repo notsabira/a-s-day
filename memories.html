@@ -1,0 +1,234 @@
+i want pictures to be same size <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memories - Happy 19th Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #fbeaff, #ffe4f0);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 15px;
+      position: relative;
+    }
+
+    .back-button {
+      text-decoration: none;
+      color: #ff4c8b;
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      color: #ff2e63;
+      margin: 0;
+    }
+
+    .title-underline {
+      width: 80px;
+      height: 3px;
+      background-color: #ff4c8b;
+      margin: 8px auto;
+      border-radius: 2px;
+    }
+
+    .memories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .memory-card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .memory-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .memory-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .memory-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 20px;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .memory-card:hover .memory-overlay {
+      opacity: 1;
+    }
+
+    .memory-overlay h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .floating-elements {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .float-element {
+      width: 15px;
+      height: 15px;
+      background-color: #ff77b4;
+      border-radius: 50%;
+      position: absolute;
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-25px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back</a>
+
+    <div class="page-header">
+      <h2 class="page-title">Picture Memories</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <div class="memories-grid">
+      <div class="memory-card">
+        <img src="memory1.jpeg" alt="First Day Adventures" />
+        <div class="memory-overlay">
+          <h3>birtday girl</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="memory2.jpeg" alt="Summer Nights" />
+        <div class="memory-overlay">
+          <h3>birtday girl</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="memory3.jpeg" alt="Milestones & Triumphs" />
+        <div class="memory-overlay">
+          <h3>birtday girl</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="memory4.jpeg" alt="Through Thick & Thin" />
+        <div class="memory-overlay">
+          <h3>birtday girl</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="memory7.jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="memory6.jpeg" alt="Looking Forward" />
+        <div class="memory-overlay">
+          <h3>Looking Forward</h3>
+        </div>
+      </div>
+    
+
+    <div class="memory-card">
+        <img src="memory8.jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="WhatsApp Image 2025-11-12 at 6.46.54 PM (1).jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="WhatsApp Image 2025-11-12 at 6.46.54 PM (2).jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+      <div class="memory-card">
+        <img src="WhatsApp Image 2025-11-12 at 6.46.54 PM.jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+      <div class="memory-card">
+        <img src="WhatsApp Image 2025-11-12 at 6.46.53 PM.jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+      <div class="memory-card">
+        <img src="WhatsApp Image 2025-11-12 at 5.57.49 PM.jpeg" alt="Unforgettable Moments" />
+        <div class="memory-overlay">
+          <h3>Unforgettable Moments</h3>
+        </div>
+      </div>
+      </div>
+
+    <div class="floating-elements">
+      <div class="float-element" style="left: 5%; animation-delay: 0s;"></div>
+      <div class="float-element" style="left: 95%; animation-delay: 2s;"></div>
+      <div class="float-element" style="left: 50%; animation-delay: 1s;"></div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
